@@ -1,3 +1,4 @@
+//server.js file for the express server module
 const express = require('express');
 const routes = require('./routes');
 // import sequelize connection

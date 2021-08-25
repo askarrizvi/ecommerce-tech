@@ -5,6 +5,9 @@ const seedProductTags = require('./product-tag-seeds');
 
 const sequelize = require('../config/connection');
 
+//Seed all the data using the seed files in the seeds directory
+//This is an async function so that the process won't exit until all of the
+//data has been seeded
 const seedAll = async () => {
   await sequelize.sync({ force: true });
   console.log('\n----- DATABASE SYNCED -----\n');

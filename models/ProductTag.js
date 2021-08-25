@@ -4,9 +4,10 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+//Initialize ProductTag table
 ProductTag.init(
   {
-    // define columns
+    // define columns (id, product_id, tag_id)
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
